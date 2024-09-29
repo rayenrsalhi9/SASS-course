@@ -1,0 +1,52 @@
+.parent {
+  background: #111111;
+}
+.parent .child {
+  background: grey;
+}
+.parent .child .grand-child {
+  background: #fafafa;
+}
+
+.parent-ele > .child-p {
+  font-size: 20px;
+}
+.parent-ele > .child-div {
+  font-size: 18px;
+}
+
+.parent > .child {
+  background: #111111;
+}
+.parent .child-2 {
+  background: #fafafa;
+}
+
+.parent > .child1 {
+  background: #000;
+}
+.parent > .child2 {
+  background: #111;
+}
+.parent + .child3 {
+  color: red;
+}
+.parent + .child4 {
+  color: grey;
+}
+
+.container .title {
+  font-size: 20px;
+}
+.container .description {
+  font-size: 14px;
+}
+.container.selected {
+  background: #111111;
+}
+.container:hover {
+  background: red;
+}
+[dir=rtl] .container {
+  direction: rtl;
+}/*# sourceMappingURL=main.css.map */

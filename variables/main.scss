@@ -1,0 +1,27 @@
+@use './variables-file/colors' as *;
+
+$main_color: #111111;
+
+.background {
+    background-color: $main_color;
+}
+
+.header {
+    $main_color: #fafafa;
+    background-color: $main_color;
+}
+
+.main-title {
+    background: $dark_color;
+    color: $light-color;
+}
+
+
+
+$mobile_screen: 'max-width: 767px';
+
+@media ($mobile_screen) {
+    .container {
+        width: 750px;
+    }
+}

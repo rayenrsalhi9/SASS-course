@@ -1,0 +1,64 @@
+.parent {
+    background: #111111;
+    .child {
+        background: grey;
+        .grand-child {
+            background: #fafafa;
+        }
+    }
+}
+
+.parent-ele > {
+    .child-p {
+        font-size: 20px;
+    }
+    .child-div {
+        font-size: 18px;
+    }
+}
+
+.parent {
+    > .child {
+        background: #111111;
+    }
+    .child-2 {
+        background: #fafafa;
+    }
+}
+
+.parent {
+    > {
+        .child1 {
+            background: #000;
+        }
+        .child2 {
+            background: #111;
+        }
+    }
+    + {
+        .child3 {
+            color: red;
+        }
+        .child4 {
+            color: grey;
+        }
+    }
+}
+
+.container {
+    .title {
+        font-size: 20px;
+    }
+    .description {
+        font-size: 14px;
+    }
+    &.selected {
+        background: #111111;
+    }
+    &:hover {
+        background: red;
+    }
+    [dir = 'rtl'] & {
+        direction: rtl;
+    }
+}
